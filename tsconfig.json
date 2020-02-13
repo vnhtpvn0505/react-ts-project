@@ -1,17 +1,13 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
+    "target": "es6", //--target ES6: DOM,ES6,DOM.Iterable,ScriptHost
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true, // cho phép JS file đc biên dịch
+    "skipLibCheck": true, // bỏ qua các kiểu  file đc khai báo
+    "esModuleInterop": true, // Khởi tạo __importStart và __importDefault giúp tương thích hệ thống babel và  allowSyntheticDefaultImports   hệ thống type
     "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
+    "strict": true, //Enable all  strict ( validate)
+    "forceConsistentCasingInFileNames": true, //Không cho phép các tham chiếu được đặt không nhất quán vào cùng một tệp.
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
@@ -19,7 +15,5 @@
     "noEmit": true,
     "jsx": "react"
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }
